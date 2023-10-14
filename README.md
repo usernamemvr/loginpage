@@ -1,2 +1,2 @@
 # loginpage
-basic login page in django
+basic login page in django.
