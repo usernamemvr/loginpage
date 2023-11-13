@@ -1,3 +1,3 @@
 # loginpage
-basic login page in django.
-email notification feature is available too
+basic login page in django
+account activation through email

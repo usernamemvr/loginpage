@@ -47,7 +47,7 @@ def signup(request):
 
         my_user.save()
 
-        messages.success(request,"Your  Account has been created succesfully!! Please check your email to confirm your email address in order to activate your account.")
+        messages.success(request,"Your Account has been created succesfully!! Please check your email to confirm your email address in order to activate your account.")
         # Welcome Email  
         subject = "Welcome to ***** **** !!"
         message = "Hello " + my_user.first_name + "!! \n" + "Welcome to ***** ****!! \nThank you for visiting our website \nWe have also sent you a confirmation email, please confirm your email address. \n\nThanking You\n Mr Durden"        
