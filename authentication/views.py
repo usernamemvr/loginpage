@@ -50,7 +50,7 @@ def signup(request):
         messages.success(request,"Your Account has been created succesfully!! Please check your email to confirm your email address in order to activate your account.")
         # Welcome Email  
         subject = "Welcome to ***** **** !!"
-        message = "Hello " + my_user.first_name + "!! \n" + "Welcome to ***** ****!! \nThank you for visiting our website\n. We have also sent you a confirmation email, please confirm your email address. \n\nThanking You\n Mr Durden"        
+        message = "Hello " + my_user.first_name + "!! \n" + "Welcome to ***** ****!! \nThank you for visiting our website \nWe have also sent you a confirmation email, please confirm your email address. \n\nThanking You\n Mr Durden"        
         from_email = settings.EMAIL_HOST_USER
         to_list = [my_user.email]
         send_mail(subject, message, from_email, to_list, fail_silently=True)
